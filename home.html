@@ -1,13 +1,17 @@
 <!DOCTYPE html>
 <html>
+<head>
+  <script src="home.js" async></script>
+</head>
 <body>
 
-<h1>To-do:</h1>
+<div>
+	<input type="text" id="newTask" placeholder="Add new task...">
+	<span onclick="newElement()">+</span>
+</div>
 
-<form>
-	<input type="text" id="task" name="task"><br>
-	<input type="submit" value="+">
-</form>
+<ul id="list">
+</ul>
 
 </body>
 </html>
