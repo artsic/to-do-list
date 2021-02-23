@@ -1,15 +1,4 @@
-const node = document.getElementById('newTask');
-node.addEventListener('keyup', function(event) {
-  if (event.key === 'Enter') {
-    newElement();
-  }
-});
-
-/*function hide() {
-  const div = this.parentElement;
-  div.style.display = 'none';
-}*/
-
+/*Handles when user presses add task button '+'*/
 function newElement() {
   const newTask = document.getElementById('newTask').value;
   if (newTask != '') {
@@ -26,11 +15,21 @@ function newElement() {
     span.appendChild(x);
     li.appendChild(span);
 
-/*    let closeBtn = document.getElementsByClassName('closeBtn');
+    const closeBtn = document.getElementsByClassName('closeBtn');
 
     for (let i = 0; i < closeBtn.length; i++) {
-      alert('hi');
-      closeBtn[i].addEventListener('click', hide(), false);
-    }*/
-  }
-}
+      closeBtn[i].onclick = function() {
+        let div = this.parentElement;
+        div.style.display = "none";
+      };
+    };
+  };
+};
+
+/*Handles when user presses 'Enter' instead of add task button*/
+const node = document.getElementById('newTask');
+node.addEventListener('keyup', function(event) {
+  if (event.key === 'Enter') {
+    newElement();
+  };
+});
