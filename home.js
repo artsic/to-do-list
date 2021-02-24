@@ -9,6 +9,7 @@ function newElement() {
     ul.appendChild(li);
     document.getElementById('newTask').value = '';
 
+    /*Add close button*/
     const span = document.createElement('SPAN');
     const x = document.createTextNode('\u00D7');
     span.className = 'closeBtn';
