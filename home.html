@@ -2,13 +2,15 @@
 <html>
 <head>
   <link rel='stylesheet' href='home.css'>
+  <link rel="preconnect" href="https://fonts.gstatic.com">
+  <link href="https://fonts.googleapis.com/css2?family=Noto+Sans+JP:wght@100;400&display=swap" rel="stylesheet">
   <script src='home.js' async></script>
 </head>
 <body>
 
 <div class='container containerHeader'>
 	<input type='text' id='newTask' placeholder='Add new task...'>
-	<span onclick='newElement()'>+</span>
+	<span id='add' onclick='newElement()'>&plus;</span>
 </div>
 
 <ul class='container containerList' id='list'>
