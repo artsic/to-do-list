@@ -39,6 +39,7 @@ ul li {
 }
 
 .closeBtn {
+  color: #757575;
   position: absolute;
   right: 0;
 }
@@ -60,10 +61,16 @@ ul li {
 
 .done {
   text-decoration: line-through;
+  animation: strike 0.5s ease-in;
 }
 
 #add {
   cursor: pointer;
   padding-right: 5px;
   padding-top: 5px;
+}
+
+@keyframes strike {
+  from { text-decoration-color: transparent; }
+  to { text-decoration-color: auto; }
 }
