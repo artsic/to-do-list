@@ -74,3 +74,9 @@ ul li {
   from { text-decoration-color: transparent; }
   to { text-decoration-color: auto; }
 }
+
+@media (max-width: 970px) {
+  .container {
+    width: 80%;
+  }
+}
