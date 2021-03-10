@@ -78,6 +78,6 @@ ul li {
 @media (max-width: 480px), (orientation: portrait) {
   .container {
     width: 80%;
-    font-size: 2em;
+    font-size: 1.5em;
   }
 }
