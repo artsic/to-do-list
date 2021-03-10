@@ -75,7 +75,7 @@ ul li {
   to { text-decoration-color: auto; }
 }
 
-@media (max-width: 970px) {
+@media (orientation: portrait) {
   .container {
     width: 80%;
   }
